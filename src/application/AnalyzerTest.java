@@ -19,14 +19,23 @@ import javafx.scene.chart.XYChart;
 class AnalyzerTest {
 
 	@Test
-	void testAnalyzer() throws IOException {
+	void testAnalyzerNotNull() throws IOException {
 		System.out.println("testing analyzer\n");
 		
 		Main test = new Main();
 		ArrayList<Entry<String, Integer>> output = test.analyzer();
-		assertNotNull(output);
+		assertNotNull(output);		
+	}
+	
+	@Test
+	void testAnalyzerNotEmpty() throws IOException {
+		System.out.println("testing analyzer\n");
+		
+		Main test = new Main();
+		ArrayList<Entry<String, Integer>> output = test.analyzer();
 		assertFalse(output.isEmpty());
 		
 	}
+	
 
 }
