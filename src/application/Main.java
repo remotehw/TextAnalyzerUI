@@ -33,6 +33,21 @@ import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 
+/**
+ * This program imports and reads a file, counts each word, organizes the collection
+ * of words by most frequently used, and displays the top 20 words as
+ * console output and a bar graph.
+ *  
+ * @author Joseph Kearns
+ */
+
+
+/**
+ * The Main class of the JavaFX program launches the GUI. In TextAnalyzerUI, 
+ * a title window is launched with buttons to start or quit the application.
+ * The start button calls the resultsChart() method, which in turn calls 
+ * the analyzer() method and displays the results in a bar graph.
+ */
 
 public class Main extends Application {
 	@Override

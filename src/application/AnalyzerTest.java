@@ -34,7 +34,6 @@ class AnalyzerTest {
 		Main test = new Main();
 		ArrayList<Entry<String, Integer>> output = test.analyzer();
 		assertFalse(output.isEmpty());
-		
 	}
 	
 
